@@ -88,9 +88,88 @@ int is_sorted(const int a[],int n){
             return 0;
         }
     }
-    return 1;  
+    return 1;     
+}
 
+void shell(int a[], int n)
+{
+    int i,j,h;
+    h=n/2;
+
+    for(i=1;i<n;i++)
+    {
+        int tmp = a[i];
+        for(j=i;j>0 && a[i-1]>tmp ; j--)
+        {
+            a[j] = a[j-1];
+        }
+        a[j] =tmp;
+    }
+
+    h=n/2;
+
+    for(i=0;i<1;i++)
+    {
+        int tmp = a[0+4];
+        for(j=1;j>0 && a[i-1]>tmp ; j--)
+        {
+            a[j] = a[j-1];
+        }
+        a[j] =tmp;
+    }
+
+h = n/2;//4
     
+    for(h=1;h<n/9;h=h*3+1);
+    
+    for(;h>0;h=h/3)  //4-2-1
+    {
+        for(i=h;i<h;i++)
+        {
+            int tmp = a[i];
+            for(j=i-h;j>0&&a[j]>tmp;j-=h)
+            {
+                a[j+h] = a[j];
+            }
+            a[j+h] = tmp;
+        }
+
+    }
+
+
+    for(i=0;i<4;i++)
+    {
+        int tmp = a[i+4];
+        for(j=i+4;j>0 && a[i]>tmp ; j-=4)
+        {
+            a[i+4] = a[i];
+        }
+        a[i] =tmp;
+    }
+
+    for(i=0;i<7;i++)
+    {
+        int tmp = a[i+2];
+        for(j=i+2;j>0 && a[j]>tmp ; j-=2)
+        {
+            a[j+2] = a[j];
+        }
+        a[i] =tmp;
+    }
+
+
+
+    for(i=1;i<8;i++)
+    {
+        int tmp = a[i];
+        for(j=i;j>0 && a[j]>tmp ; j--)
+        {
+            a[j+1] = a[j];
+        }
+        a[i] =tmp;
+    }
+
+
 }
 
 int main(void)
