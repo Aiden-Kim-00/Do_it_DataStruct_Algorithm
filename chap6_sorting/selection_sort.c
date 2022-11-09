@@ -79,7 +79,6 @@ void straight_insertion(int a[], int n)
     }
 }
 
-
 int is_sorted(const int a[],int n){
     int i;
     for (i = 0; i < n-1; i++)
