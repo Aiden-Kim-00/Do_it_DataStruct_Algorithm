@@ -125,7 +125,7 @@ h = n/2;//4
     for(;h>0;h=h/3)  //4-2-1
     {
         for(i=h;i<h;i++)
-        {
+        { 
             int tmp = a[i];
             for(j=i-h;j>0&&a[j]>tmp;j-=h)
             {
@@ -171,6 +171,7 @@ h = n/2;//4
 
 
 }
+
 
 int main(void)
 {
