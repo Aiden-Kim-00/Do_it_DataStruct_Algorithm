@@ -21,15 +21,13 @@
 
 int main(){
 
-    // int a,b,c;
-    // printf("a: ");
-    // scanf("%d",&a);
-    // printf("b: ");
-    // scanf("%d",&b);
-    // printf("c: ");
-    // scanf("%d",&c);
+    int a = (1,2);
 
-    // printf("med: %d", med3(a,b,c));
+    printf("%d %d",a);
+
+
+
+
     return 0;
 
 }
