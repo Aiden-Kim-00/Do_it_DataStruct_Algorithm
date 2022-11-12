@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "intstack.h": "c"
+        "intstack.h": "c",
+        "cstdlib": "c"
     }
 }

@@ -20,10 +20,11 @@
 
 
 int main(){
+    int i;
+    for(i=0;i<2;i++)
+        printf("test\n");
 
-    int a = (1,2);
-
-    printf("%d %d",a);
+    printf("i: %d",i);
 
 
 
