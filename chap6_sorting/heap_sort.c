@@ -62,7 +62,7 @@ int main(void)
         scanf("%d", &a[i]);
     }
 
-    mergesort(a,na);
+    heatsort(a,na);
 
 
 
