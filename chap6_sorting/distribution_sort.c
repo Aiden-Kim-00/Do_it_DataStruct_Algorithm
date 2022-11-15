@@ -41,9 +41,6 @@ void distributionsort(int a[], int n)
     free(f);
     free(b);
 
-
-
-    
 }
 
 
