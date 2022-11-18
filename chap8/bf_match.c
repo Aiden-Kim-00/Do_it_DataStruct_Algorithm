@@ -32,8 +32,11 @@ int bm_match(const char txt[], const char pat[])
     int skip[UCHAR_MAX+1]; //255
     for(pt=0;pt<=UCHAR_MAX;pt++)
         skip[pt] = pat_len;
-    for(p=0;pt<pat_len-1;pt++)
+    for(pt=0;pt<pat_len-1;pt++)
         skip[pat[pt]]=pat_len-pt-1;
+    
+    for(int i=0;i<)
+    printf("skip[%d]: %d",)
 
 }
 
