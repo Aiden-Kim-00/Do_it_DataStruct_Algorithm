@@ -36,7 +36,7 @@ void PrintCurrent(const List *list);
 
 void PrintLnCurrent(const List *list);
 
-void Print(cosnt List *list);
+void Print(const List *list);
 
 void Terminate(List *list);
 
