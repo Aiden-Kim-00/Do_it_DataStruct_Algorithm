@@ -1,28 +1,28 @@
-/* È¸¿ø µ¥ÀÌÅÍ Member(Çì´õ) */
+/* íšŒì› ë°ì´í„° Member(í—¤ë”) */
 #ifndef ___Member
 #define ___Member
 
-/*--- È¸¿ø µ¥ÀÌÅÍ ---*/
+/*--- íšŒì› ë°ì´í„° ---*/
 typedef struct {
-	int no; 				/* ¹øÈ£ */
-	char name[20]; 		    /* ÀÌ¸§ */
+	int no; 				/* ë²ˆí˜¸ */
+	char name[20]; 		    /* ì´ë¦„ */
 } Member;
 
-#define MEMBER_NO		1 	/* ¹øÈ£¸¦ ³ªÅ¸³»´Â Á¤¼ö °ª */
-#define MEMBER_NAME		2 	/* ÀÌ¸§À» ³ªÅ¸³»´Â »ó¼ö °ª */
+#define MEMBER_NO		1 	/* ë²ˆí˜¸ë¥¼ ë‚˜íƒ€ë‚´ëŠ” ì •ìˆ˜ ê°’ */
+#define MEMBER_NAME		2 	/* ì´ë¦„ì„ ë‚˜íƒ€ë‚´ëŠ” ìƒìˆ˜ ê°’ */
 
-/*--- È¸¿ø ¹øÈ£ ºñ±³ ÇÔ¼ö ---*/
+/*--- íšŒì› ë²ˆí˜¸ ë¹„êµ í•¨ìˆ˜ ---*/
 int MemberNoCmp(const Member *x, const Member *y);
 
-/*--- È¸¿ø ÀÌ¸§ ºñ±³ ÇÔ¼ö ---*/
+/*--- íšŒì› ì´ë¦„ ë¹„êµ í•¨ìˆ˜ ---*/
 int MemberNameCmp(const Member *x, const Member *y);
 
-/*--- È¸¿ø µ¥ÀÌÅÍ¸¦ Ç¥½Ã(ÁÙ ¹Ù²Ş ¾øÀ½) ---*/
+/*--- íšŒì› ë°ì´í„°ë¥¼ í‘œì‹œ(ì¤„ ë°”ê¿ˆ ì—†ìŒ) ---*/
 void PrintMember(const Member *x);
 
-/*--- È¸¿ø µ¥ÀÌÅÍ¸¦ Ç¥½Ã(ÁÙ ¹Ù²Ş ÀÖÀ½) ---*/
+/*--- íšŒì› ë°ì´í„°ë¥¼ í‘œì‹œ(ì¤„ ë°”ê¿ˆ ìˆìŒ) ---*/
 void PrintLnMember(const Member *x);
 
-/*--- È¸¿ø µ¥ÀÌÅÍ¸¦ ÀĞ¾î µéÀÌ±â ---*/
+/*--- íšŒì› ë°ì´í„°ë¥¼ ì½ì–´ ë“¤ì´ê¸° ---*/
 Member ScanMember(const char *message, int sw);
 #endif
