@@ -1,3 +1,5 @@
+// gcc -o test9-2 test9-2.c LinkedList.c Member.c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "Member.h"
@@ -11,7 +13,6 @@ typedef enum{
 Menu SelectMenu(void)
 {
     int i, ch;
-    puts("¾È³ç");
     char *mstring[] = {
         "Çìµå¿¡ »ğÀÔ",
         "²¿¸®¿¡ »ğÀÔ",
